@@ -1,19 +1,15 @@
 package com.app.android.lib;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
 import com.app.androidapp.init.Constants;
 import com.app.androidapp.init.GlobalVariables;
-
 import io.appium.java_client.android.AndroidDriver;
-
-public class BaseLib{
+public class BaseLib
+{
 	public static  GlobalVariables gv = new GlobalVariables();
 	@BeforeClass
 	public void _LaunchApp() throws MalformedURLException

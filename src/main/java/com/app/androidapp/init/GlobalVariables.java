@@ -1,19 +1,13 @@
 package com.app.androidapp.init;
-
 import java.util.Properties;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import com.app.android.lib.GenericLibrary;
-
 import io.appium.java_client.android.AndroidDriver;
-
-public class GlobalVariables {
-	
+public class GlobalVariables 
+{	
 //	Global Variables
 	public AndroidDriver driver;
-	public DesiredCapabilities capabilities;
-	
+	public DesiredCapabilities capabilities;	
 //	DesiredCapabilities Variables
 	public int port =Integer.parseInt(GenericLibrary.getProprtyValue(Constants.DCfile, "port"));
 	public String deviceName=GenericLibrary.getProprtyValue(Constants.DCfile, "devicename");
